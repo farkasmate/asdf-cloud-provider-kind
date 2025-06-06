@@ -39,15 +39,15 @@ download_release() {
 	filename="$2"
 
 	case "$(uname -s)" in
-		Darwin) platform="darwin" ;;
-		Linux) platform="linux" ;;
-		*) fail "Unsupported platform" ;;
+	Darwin) platform="darwin" ;;
+	Linux) platform="linux" ;;
+	*) fail "Unsupported platform" ;;
 	esac
 
 	case "$(uname -m)" in
-		x86_64) architecture="amd64" ;;
-		arm64|aarch64|armv8l) architecture="arm64" ;;
-		*) fail "Unsupported architecture" ;;
+	x86_64) architecture="amd64" ;;
+	arm64 | aarch64 | armv8l) architecture="arm64" ;;
+	*) fail "Unsupported architecture" ;;
 	esac
 
 	url="$GH_REPO/releases/download/v${version}/${TOOL_NAME}_${version}_${platform}_${architecture}.tar.gz"
