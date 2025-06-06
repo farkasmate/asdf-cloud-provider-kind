@@ -15,10 +15,7 @@
 
 # Dependencies
 
-**TODO: adapt this section**
-
 - `bash`, `curl`, `tar`, and [POSIX utilities](https://pubs.opengroup.org/onlinepubs/9699919799/idx/utilities.html).
-- `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
 
 # Install
 
@@ -43,7 +40,7 @@ asdf install cloud-provider-kind latest
 asdf global cloud-provider-kind latest
 
 # Now cloud-provider-kind commands are available
-asdf-cloud-provider-kind --help
+cloud-provider-kind --help
 ```
 
 Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to
